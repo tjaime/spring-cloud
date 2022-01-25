@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: service-primeiro
+    
+server:
+  port: 9001
+  
+eureka:
+  client:
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: false
+    hostname: localhost
+    instance-id: service-primeiro-1

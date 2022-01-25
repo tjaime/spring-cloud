@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: service-segundo
+    
+server:
+  port: 9900
+  
+eureka:
+  client:
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: false
+    hostname: localhost
